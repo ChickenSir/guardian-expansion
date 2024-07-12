@@ -24,7 +24,7 @@ public class GuardianExpansion implements ModInitializer {
 
 	// Item Group For Modded Content
 	private static final ItemGroup GUARDIAN_EXPANSION_GROUP = FabricItemGroup.builder()
-		.icon(() -> new ItemStack(Items.PRISMARINE))
+		.icon(() -> new ItemStack(Items.PRISMARINE_SHARD))
 		.displayName(Text.translatable(modName))
 		.entries((context, entries) -> {
 			entries.add(ItemsCollection.PRISMARINE_SWORD);
