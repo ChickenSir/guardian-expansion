@@ -1,8 +1,8 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        " P ",
-        " P ",
+        "PP ",
+        "PS ",
         " S "
     ],
     "key": {
@@ -14,6 +14,6 @@
         }
     },
     "result": {
-        "item": "guardianexpansion:prismarine_sword"
+        "item": "guardianexpansion:prismarine_axe"
     }
 }

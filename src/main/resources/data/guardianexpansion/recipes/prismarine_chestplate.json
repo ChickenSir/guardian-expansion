@@ -1,19 +1,16 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        " P ",
-        " P ",
-        " S "
+        "S S",
+        "SSS",
+        "SSS"
     ],
     "key": {
-        "P": {
-            "item": "minecraft:prismarine"
-        },
         "S": {
             "item": "minecraft:prismarine_shard"
         }
     },
     "result": {
-        "item": "guardianexpansion:prismarine_sword"
+        "item": "guardianexpansion:prismarine_chestplate"
     }
 }
