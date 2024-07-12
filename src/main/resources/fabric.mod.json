@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "guardian-expansion",
+	"id": "guardianexpansion",
 	"version": "${version}",
 	"name": "Guardian Expansion",
 	"description": "Adds multiple items, equipment, and blocks themed around guardians!",
