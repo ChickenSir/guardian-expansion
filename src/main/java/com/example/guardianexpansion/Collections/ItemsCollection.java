@@ -21,11 +21,11 @@ import net.minecraft.item.Item;
 
 public class ItemsCollection {
     // Mod Tools
-    public static final ToolItem PRISMARINE_SWORD = new SwordItem(PrismarineToolMaterial.INSTANCE, 0, 0f, new FabricItemSettings());
-    public static final ToolItem PRISMARINE_PICKAXE = new PickaxeItem(PrismarineToolMaterial.INSTANCE, 0, 0f, new FabricItemSettings());
-    public static final ToolItem PRISMARINE_AXE = new AxeItem(PrismarineToolMaterial.INSTANCE, 0, 0f, new FabricItemSettings());
-    public static final ToolItem PRISMARINE_SHOVEL = new ShovelItem(PrismarineToolMaterial.INSTANCE, 0, 0f, new FabricItemSettings());
-    public static final ToolItem PRISMARINE_HOE = new HoeItem(PrismarineToolMaterial.INSTANCE, 0, 0f, new FabricItemSettings());
+    public static final ToolItem PRISMARINE_SWORD = new SwordItem(PrismarineToolMaterial.INSTANCE, -1, -2.2f, new FabricItemSettings());
+    public static final ToolItem PRISMARINE_PICKAXE = new PickaxeItem(PrismarineToolMaterial.INSTANCE, -3, -2.2f, new FabricItemSettings());
+    public static final ToolItem PRISMARINE_AXE = new AxeItem(PrismarineToolMaterial.INSTANCE, 1, -3.1f, new FabricItemSettings());
+    public static final ToolItem PRISMARINE_SHOVEL = new ShovelItem(PrismarineToolMaterial.INSTANCE, -3, -2.2f, new FabricItemSettings());
+    public static final ToolItem PRISMARINE_HOE = new HoeItem(PrismarineToolMaterial.INSTANCE, -4, -2.2f, new FabricItemSettings());
 
     // Mod Armor
     public static final ArmorMaterial PRISMARINE_ARMOR_MATERIAL = new PrismarineArmorMaterial();
