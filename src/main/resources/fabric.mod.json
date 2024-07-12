@@ -3,15 +3,15 @@
 	"id": "guardian-expansion",
 	"version": "${version}",
 	"name": "Guardian Expansion",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Adds multiple items, equipment, and blocks themed around guardians!",
 	"authors": [
-		"Me!"
+		"ChickenSir"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/ChickenSir/guardian-expansion",
+		"sources": "https://github.com/ChickenSir/guardian-expansion"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/guardian-expansion/icon.png",
 	"environment": "*",
 	"entrypoints": {
