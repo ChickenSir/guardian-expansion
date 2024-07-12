@@ -1,5 +1,6 @@
 package com.example.guardianexpansion.Collections;
 
+import com.example.guardianexpansion.Items.GuardianBeamItem;
 import com.example.guardianexpansion.Materials.PrismarineArmorMaterial;
 import com.example.guardianexpansion.Materials.PrismarineToolMaterial;
 
@@ -35,7 +36,7 @@ public class ItemsCollection {
     public static final Item PRISMARINE_BOOTS = new ArmorItem(PRISMARINE_ARMOR_MATERIAL, Type.BOOTS, new Item.Settings());
 
     // Mod Weapons
-    public static final Item GUARDIAN_BEAM = new Item(new FabricItemSettings().maxCount(1));
+    public static final Item GUARDIAN_BEAM = new GuardianBeamItem(new FabricItemSettings().maxCount(1));
     public static final Item ELDER_GUARDIAN_BEAM = new Item(new FabricItemSettings().maxCount(1));
 
     public static void Register(String modID) {
