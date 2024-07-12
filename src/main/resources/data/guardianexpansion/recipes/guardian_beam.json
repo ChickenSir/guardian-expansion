@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "SHS",
+        "SPS",
+        " S "
+    ],
+    "key": {
+        "P": {
+            "item": "minecraft:prismarine"
+        },
+        "S": {
+            "item": "minecraft:prismarine_shard"
+        },
+        "H": {
+            "item": "minecraft:heart_of_the_sea"
+        }
+    },
+    "result": {
+        "item": "guardianexpansion:guardian_beam"
+    }
+}
