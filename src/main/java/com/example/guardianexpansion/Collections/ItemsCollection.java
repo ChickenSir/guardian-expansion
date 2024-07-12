@@ -34,6 +34,10 @@ public class ItemsCollection {
     public static final Item PRISMARINE_LEGGINGS = new ArmorItem(PRISMARINE_ARMOR_MATERIAL, Type.LEGGINGS, new Item.Settings());
     public static final Item PRISMARINE_BOOTS = new ArmorItem(PRISMARINE_ARMOR_MATERIAL, Type.BOOTS, new Item.Settings());
 
+    // Mod Weapons
+    public static final Item GUARDIAN_BEAM = new Item(new FabricItemSettings().maxCount(1));
+    public static final Item ELDER_GUARDIAN_BEAM = new Item(new FabricItemSettings().maxCount(1));
+
     public static void Register(String modID) {
         // Register Tools
         Registry.register(Registries.ITEM, new Identifier(modID, "prismarine_sword"), PRISMARINE_SWORD);
@@ -47,5 +51,9 @@ public class ItemsCollection {
         Registry.register(Registries.ITEM, new Identifier(modID, "prismarine_chestplate"), PRISMARINE_CHESTPLATE);
         Registry.register(Registries.ITEM, new Identifier(modID, "prismarine_leggings"), PRISMARINE_LEGGINGS);
         Registry.register(Registries.ITEM, new Identifier(modID, "prismarine_boots"), PRISMARINE_BOOTS);
+
+        // Mod Weapons
+        Registry.register(Registries.ITEM, new Identifier(modID, "guardian_beam"), GUARDIAN_BEAM);
+        Registry.register(Registries.ITEM, new Identifier(modID, "elder_guardian_beam"), ELDER_GUARDIAN_BEAM);
     }
 }

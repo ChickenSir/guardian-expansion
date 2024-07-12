@@ -35,6 +35,8 @@ public class GuardianExpansion implements ModInitializer {
 			entries.add(ItemsCollection.PRISMARINE_CHESTPLATE);
 			entries.add(ItemsCollection.PRISMARINE_LEGGINGS);
 			entries.add(ItemsCollection.PRISMARINE_BOOTS);
+			entries.add(ItemsCollection.GUARDIAN_BEAM);
+			entries.add(ItemsCollection.ELDER_GUARDIAN_BEAM);
 		})
 		.build();
 
