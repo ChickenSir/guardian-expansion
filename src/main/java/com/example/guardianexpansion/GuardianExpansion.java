@@ -48,6 +48,9 @@ public class GuardianExpansion implements ModInitializer {
 			entries.add(ItemsCollection.ELDER_GUARDIAN_LEGGINGS);
 			entries.add(ItemsCollection.ELDER_GUARDIAN_BOOTS);
 			entries.add(ItemsCollection.OCEAN_UPGRADE_TEMPLATE);
+			entries.add(BlocksCollection.ELDER_PRISMARINE);
+			entries.add(BlocksCollection.ELDER_PRISMARINE_BRICKS);
+			entries.add(BlocksCollection.ELDER_DARK_PRISMARINE);
 		})
 		.build();
 
