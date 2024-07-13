@@ -11,17 +11,17 @@ import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 
 public class PrismarineArmorMaterial implements ArmorMaterial {
-    private static final int[] BASE_DURABILITY = new int[] {13, 15, 16, 11};
-    private static final int[] PROTECTION_VALUES = new int[] {2, 7, 5, 2};
-    private static final int durabilityMultipleer = 25;
+    private static final int[] BASE_DURABILITY = new int[] {16, 25, 20, 18};
+    private static final int[] PROTECTION_VALUES = new int[] {2, 7, 6, 2};
+    private static final int durabilityMultiplier = 15;
     private static final int enchantability = 12;
     private static final String name = "prismarine";
-    private static final float toughness = 1f;
-    private static float knockbackResistance = 2f;
+    private static final float toughness = 0f;
+    private static float knockbackResistance = 0.5f;
 
     @Override
     public int getDurability(Type type) {
-        return BASE_DURABILITY[type.ordinal()] * durabilityMultipleer;
+        return BASE_DURABILITY[type.ordinal()] * durabilityMultiplier;
     }
 
     @Override
