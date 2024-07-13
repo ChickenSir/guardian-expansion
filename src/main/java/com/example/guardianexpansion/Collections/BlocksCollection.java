@@ -19,8 +19,10 @@ public class BlocksCollection {
         // Register Blocks
         Registry.register(Registries.BLOCK, new Identifier(modID, "elder_prismarine"), ELDER_PRISMARINE);
         Registry.register(Registries.ITEM, new Identifier(modID, "elder_prismarine"), new BlockItem(ELDER_PRISMARINE, new FabricItemSettings()));
+
         Registry.register(Registries.BLOCK, new Identifier(modID, "elder_prismarine_bricks"), ELDER_PRISMARINE_BRICKS);
         Registry.register(Registries.ITEM, new Identifier(modID, "elder_prismarine_bricks"), new BlockItem(ELDER_PRISMARINE_BRICKS, new FabricItemSettings()));
+        
         Registry.register(Registries.BLOCK, new Identifier(modID, "elder_dark_prismarine"), ELDER_DARK_PRISMARINE);
         Registry.register(Registries.ITEM, new Identifier(modID, "elder_dark_prismarine"), new BlockItem(ELDER_DARK_PRISMARINE, new FabricItemSettings()));
     }
