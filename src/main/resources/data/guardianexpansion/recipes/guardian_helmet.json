@@ -1,6 +1,8 @@
 {
     "type": "minecraft:smithing_transform",
-    "template": {},
+    "template": {
+        "item": "guardianexpansion:ocean_upgrade_template"
+    },
     "base": {
         "item": "guardianexpansion:prismarine_helmet"
     },

@@ -25,6 +25,7 @@ import net.minecraft.item.Item;
 public class ItemsCollection {
     // Mod Items
     public static final Item ELDER_PRISMARINE_SHARD = new Item(new FabricItemSettings());
+    public static final Item OCEAN_UPGRADE_TEMPLATE = new Item(new FabricItemSettings());
 
     // Mod Tools
     public static final ToolItem PRISMARINE_SWORD = new SwordItem(PrismarineToolMaterial.INSTANCE, -1, -2.2f, new FabricItemSettings());
@@ -59,6 +60,7 @@ public class ItemsCollection {
     public static void Register(String modID) {
         // Register Items
         Registry.register(Registries.ITEM, new Identifier(modID, "elder_prismarine_shard"), ELDER_PRISMARINE_SHARD);
+        Registry.register(Registries.ITEM, new Identifier(modID, "ocean_upgrade_template"), OCEAN_UPGRADE_TEMPLATE);
 
         // Register Tools
         Registry.register(Registries.ITEM, new Identifier(modID, "prismarine_sword"), PRISMARINE_SWORD);

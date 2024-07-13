@@ -1,5 +1,8 @@
 {
-    "type": "minecraft:smithing_trim",
+    "type": "minecraft:smithing_transform",
+    "template": {
+        "item": "guardianexpansion:ocean_upgrade_template"
+    },
     "base": {
         "item": "guardianexpansion:prismarine_chestplate"
     },
