@@ -1,6 +1,7 @@
 {
     "replace": "false",
     "values": [
-        "minecraft:nautilus_shell"
+        "minecraft:nautilus_shell",
+        "guardianexpansion:elder_prismarine_shard"
     ]
 }

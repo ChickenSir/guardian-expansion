@@ -8,6 +8,10 @@
         "guardianexpansion:guardian_helmet",
         "guardianexpansion:guardian_chestplate",
         "guardianexpansion:guardian_leggings",
-        "guardianexpansion:guardian_boots"
+        "guardianexpansion:guardian_boots",
+        "guardianexpansion:elder_guardian_helmet",
+        "guardianexpansion:elder_guardian_chestplate",
+        "guardianexpansion:elder_guardian_leggings",
+        "guardianexpansion:elder_guardian_boots"
     ]
 }
