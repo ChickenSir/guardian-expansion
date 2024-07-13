@@ -12,6 +12,7 @@ import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.example.guardianexpansion.Collections.BlocksCollection;
 import com.example.guardianexpansion.Collections.ItemsCollection;
 
 public class GuardianExpansion implements ModInitializer {
@@ -56,6 +57,11 @@ public class GuardianExpansion implements ModInitializer {
 		LOGGER.info("Registering Items!");
 
 		ItemsCollection.Register(modID);
+
+		// Register Blocks
+		LOGGER.info("Registering Blocks!");
+
+		BlocksCollection.Register(modID);
 
 		// Register Item Group
 		LOGGER.info("Registerting Item Group!");
