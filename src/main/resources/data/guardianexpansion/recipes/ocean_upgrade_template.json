@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " P ",
+        "PDP",
+        " P "
+    ],
+    "key": {
+        "P": {
+            "item": "minecraft:prismarine_shard"
+        },
+        "D": {
+            "item": "minecraft:diamond"
+        }
+    },
+    "result": {
+        "item": "guardianexpansion:ocean_upgrade_template"
+    }
+}
