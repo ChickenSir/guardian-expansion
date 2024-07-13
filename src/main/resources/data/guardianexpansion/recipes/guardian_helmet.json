@@ -1,5 +1,6 @@
 {
     "type": "minecraft:smithing_transform",
+    "template": {},
     "base": {
         "item": "guardianexpansion:prismarine_helmet"
     },
@@ -7,6 +8,6 @@
         "item": "minecraft:nautilus_shell"
     },
     "result": {
-        "id": "guardianexpansion:guardian_helmet"
+        "item": "guardianexpansion:guardian_helmet"
     }
 }

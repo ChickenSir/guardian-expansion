@@ -1,0 +1,13 @@
+{
+    "replace": "false",
+    "values": [
+        "guardianexpansion:prismarine_helmet",
+        "guardianexpansion:prismarine_chestplate",
+        "guardianexpansion:prismarine_leggings",
+        "guardianexpansion:prismarine_boots",
+        "guardianexpansion:guardian_helmet",
+        "guardianexpansion:guardian_chestplate",
+        "guardianexpansion:guardian_leggings",
+        "guardianexpansion:guardian_boots"
+    ]
+}
