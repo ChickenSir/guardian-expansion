@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing_transform",
+    "base": {
+        "item": "guardianexpansion:prismarine_boots"
+    },
+    "addition": {
+        "item": "minecraft:nautilus_shell"
+    },
+    "result": {
+        "id": "guardianexpansion:guardian_boots"
+    }
+}

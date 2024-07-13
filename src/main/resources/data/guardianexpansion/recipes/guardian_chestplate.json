@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing_transform",
+    "base": {
+        "item": "guardianexpansion:prismarine_chestplate"
+    },
+    "addition": {
+        "item": "minecraft:nautilus_shell"
+    },
+    "result": {
+        "id": "guardianexpansion:guardian_chestplate"
+    }
+}
