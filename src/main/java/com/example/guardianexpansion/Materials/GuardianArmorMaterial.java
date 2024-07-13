@@ -1,16 +1,15 @@
 package com.example.guardianexpansion.Materials;
 
-import net.minecraft.item.ArmorItem.Type;
-
 import com.example.guardianexpansion.GuardianExpansion;
 
 import net.minecraft.item.ArmorMaterial;
+import net.minecraft.item.ArmorItem.Type;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 
-public class PrismarineArmorMaterial implements ArmorMaterial {
+public class GuardianArmorMaterial implements ArmorMaterial {
     private static final int[] BASE_DURABILITY = new int[] {13, 15, 16, 11};
     private static final int[] PROTECTION_VALUES = new int[] {2, 7, 5, 2};
     private static final int durabilityMultipleer = 25;
@@ -58,5 +57,4 @@ public class PrismarineArmorMaterial implements ArmorMaterial {
     public float getToughness() {
         return toughness;
     }
-    
 }
