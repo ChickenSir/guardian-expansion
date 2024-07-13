@@ -41,6 +41,11 @@ public class GuardianExpansion implements ModInitializer {
 			entries.add(ItemsCollection.GUARDIAN_CHESTPLATE);
 			entries.add(ItemsCollection.GUARDIAN_LEGGINGS);
 			entries.add(ItemsCollection.GUARDIAN_BOOTS);
+			entries.add(ItemsCollection.ELDER_PRISMARINE_SHARD);
+			entries.add(ItemsCollection.ELDER_GUARDIAN_HELMET);
+			entries.add(ItemsCollection.ELDER_GUARDIAN_CHESTPLATE);
+			entries.add(ItemsCollection.ELDER_GUARDIAN_LEGGINGS);
+			entries.add(ItemsCollection.ELDER_GUARDIAN_BOOTS);
 		})
 		.build();
 

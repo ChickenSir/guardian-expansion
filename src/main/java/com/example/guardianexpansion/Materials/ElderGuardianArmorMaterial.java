@@ -14,7 +14,7 @@ public class ElderGuardianArmorMaterial implements ArmorMaterial {
     private static final int[] PROTECTION_VALUES = new int[] {3, 7, 6, 3};
     private static final int durabilityMultipleer = 24;
     private static final int enchantability = 18;
-    private static final String name = "elder_guardian";
+    private static final String name = "armor_elder_guardian";
     private static final float toughness = 2.5f;
     private static float knockbackResistance = 1f;
 
