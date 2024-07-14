@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "guardianexpansion:block/elder_dark_prismarine",
+    "side": "guardianexpansion:block/elder_dark_prismarine",
+    "top": "guardianexpansion:block/elder_dark_prismarine"
+  }
+}
