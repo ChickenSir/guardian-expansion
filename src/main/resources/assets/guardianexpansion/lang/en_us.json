@@ -22,5 +22,14 @@
     "item.guardianexpansion.ocean_upgrade_template": "Ocean Upgrade Template",
     "block.guardianexpansion.elder_prismarine": "Elder Prismarine",
     "block.guardianexpansion.elder_prismarine_bricks": "Elder Prismarine Bricks",
-    "block.guardianexpansion.elder_dark_prismarine": "Elder Dark Prismarine"
+    "block.guardianexpansion.elder_dark_prismarine": "Elder Dark Prismarine",
+    "block.guardianexpansion.elder_prismarine_stairs": "Elder Prismarine Stairs",
+    "block.guardianexpansion.elder_prismarine_slab": "Elder Prismarine Slab",
+    "block.guardianexpansion.elder_prismarine_wall": "Elder Prismarine Wall",
+    "block.guardianexpansion.elder_prismarine_bricks_stairs": "Elder Prismarine Bricks Stairs",
+    "block.guardianexpansion.elder_prismarine_bricks_slab": "Elder Prismarine Bricks Slab",
+    "block.guardianexpansion.elder_prismarine_bricks_wall": "Elder Prismarine Bricks Wall",
+    "block.guardianexpansion.elder_dark_prismarine_stairs": "Elder Dark Prismarine Stairs",
+    "block.guardianexpansion.elder_dark_prismarine_slab": "Elder Dark Prismarine Slab",
+    "block.guardianexpansion.elder_dark_prismarine_wall": "Elder Dark Prismarine Wall"
 }

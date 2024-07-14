@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "": {"model": "guardianexpansion:block/elder_prismarine"}
+  "variants": {
+    "": {
+      "model": "guardianexpansion:block/elder_prismarine"
     }
+  }
 }
