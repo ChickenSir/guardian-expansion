@@ -1,4 +1,4 @@
-package com.example.guardianexpansion;
+package com.guardianexpansion;
 
 import net.fabricmc.api.ClientModInitializer;
 

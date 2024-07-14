@@ -1,4 +1,4 @@
-package com.example.guardianexpansion.mixin;
+package com.guardianexpansion.mixin;
 
 import net.minecraft.server.MinecraftServer;
 import org.spongepowered.asm.mixin.Mixin;

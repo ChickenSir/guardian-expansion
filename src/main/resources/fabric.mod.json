@@ -12,20 +12,23 @@
 		"sources": "https://github.com/ChickenSir/guardian-expansion"
 	},
 	"license": "MIT",
-	"icon": "assets/guardian-expansion/icon.png",
+	"icon": "assets/guardianexpansion/icon.png",
 	"environment": "*",
 	"entrypoints": {
+		"fabric-datagen": [
+			"com.guardianexpansion.datagen.GuardianExpansionDataGenerator"
+		],
 		"main": [
-			"com.example.guardianexpansion.GuardianExpansion"
+			"com.guardianexpansion.GuardianExpansion"
 		],
 		"client": [
-			"com.example.guardianexpansion.GuardianExpansionClient"
+			"com.guardianexpansion.GuardianExpansionClient"
 		]
 	},
 	"mixins": [
-		"guardian-expansion.mixins.json",
+		"guardianexpansion.mixins.json",
 		{
-			"config": "guardian-expansion.client.mixins.json",
+			"config": "guardianexpansion.client.mixins.json",
 			"environment": "client"
 		}
 	],

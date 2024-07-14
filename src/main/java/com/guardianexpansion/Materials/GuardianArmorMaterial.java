@@ -1,6 +1,6 @@
-package com.example.guardianexpansion.Materials;
+package com.guardianexpansion.Materials;
 
-import com.example.guardianexpansion.GuardianExpansion;
+import com.guardianexpansion.GuardianExpansion;
 
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.ArmorItem.Type;

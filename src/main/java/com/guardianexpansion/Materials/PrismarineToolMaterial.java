@@ -1,4 +1,4 @@
-package com.example.guardianexpansion.Materials;
+package com.guardianexpansion.Materials;
 
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;

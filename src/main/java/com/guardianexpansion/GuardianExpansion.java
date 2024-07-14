@@ -1,4 +1,4 @@
-package com.example.guardianexpansion;
+package com.guardianexpansion;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
@@ -12,8 +12,8 @@ import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.example.guardianexpansion.Collections.BlocksCollection;
-import com.example.guardianexpansion.Collections.ItemsCollection;
+import com.guardianexpansion.Collections.BlocksCollection;
+import com.guardianexpansion.Collections.ItemsCollection;
 
 public class GuardianExpansion implements ModInitializer {
 

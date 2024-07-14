@@ -1,8 +1,8 @@
-package com.example.guardianexpansion.Materials;
+package com.guardianexpansion.Materials;
 
 import net.minecraft.item.ArmorItem.Type;
 
-import com.example.guardianexpansion.GuardianExpansion;
+import com.guardianexpansion.GuardianExpansion;
 
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.Items;
@@ -10,18 +10,18 @@ import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 
-public class PrismarineArmorMaterial implements ArmorMaterial {
+public class ElderGuardianArmorMaterial implements ArmorMaterial {
     private static final int[] BASE_DURABILITY = new int[] {16, 25, 20, 18};
-    private static final int[] PROTECTION_VALUES = new int[] {2, 7, 6, 2};
-    private static final int durabilityMultiplier = 15;
-    private static final int enchantability = 12;
-    private static final String name = "prismarine";
-    private static final float toughness = 0f;
-    private static float knockbackResistance = 0.5f;
+    private static final int[] PROTECTION_VALUES = new int[] {3, 7, 6, 3};
+    private static final int durabilityMultipleer = 24;
+    private static final int enchantability = 18;
+    private static final String name = "armor_elder_guardian";
+    private static final float toughness = 2.5f;
+    private static float knockbackResistance = 1f;
 
     @Override
     public int getDurability(Type type) {
-        return BASE_DURABILITY[type.ordinal()] * durabilityMultiplier;
+        return BASE_DURABILITY[type.ordinal()] * durabilityMultipleer;
     }
 
     @Override
@@ -58,5 +58,4 @@ public class PrismarineArmorMaterial implements ArmorMaterial {
     public float getToughness() {
         return toughness;
     }
-    
 }

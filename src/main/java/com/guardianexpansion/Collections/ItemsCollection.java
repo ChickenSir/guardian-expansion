@@ -1,10 +1,10 @@
-package com.example.guardianexpansion.Collections;
+package com.guardianexpansion.Collections;
 
-import com.example.guardianexpansion.Items.GuardianBeamItem;
-import com.example.guardianexpansion.Materials.ElderGuardianArmorMaterial;
-import com.example.guardianexpansion.Materials.GuardianArmorMaterial;
-import com.example.guardianexpansion.Materials.PrismarineArmorMaterial;
-import com.example.guardianexpansion.Materials.PrismarineToolMaterial;
+import com.guardianexpansion.Items.GuardianBeamItem;
+import com.guardianexpansion.Materials.ElderGuardianArmorMaterial;
+import com.guardianexpansion.Materials.GuardianArmorMaterial;
+import com.guardianexpansion.Materials.PrismarineArmorMaterial;
+import com.guardianexpansion.Materials.PrismarineToolMaterial;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 

@@ -1,4 +1,4 @@
-package com.example.guardianexpansion.Items;
+package com.guardianexpansion.Items;
 
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
