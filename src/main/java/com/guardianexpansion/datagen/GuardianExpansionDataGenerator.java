@@ -121,18 +121,17 @@ public class GuardianExpansionDataGenerator implements DataGeneratorEntrypoint {
 
         @Override
         public void generate(Consumer<RecipeJsonProvider> exporter) {
-            createStairsRecipe(BlocksCollection.ELDER_PRISMARINE, Ingredient.ofItems(BlocksCollection.ELDER_PRISMARINE))
+            createStairsRecipe(BlocksCollection.ELDER_PRISMARINE_STAIRS, Ingredient.ofItems(BlocksCollection.ELDER_PRISMARINE))
                 .criterion(hasItem(BlocksCollection.ELDER_PRISMARINE), conditionsFromItem(BlocksCollection.ELDER_PRISMARINE))
                 .offerTo(exporter, new Identifier(getRecipeName(BlocksCollection.ELDER_PRISMARINE_STAIRS)));
 
-            createStairsRecipe(BlocksCollection.ELDER_PRISMARINE_BRICKS, Ingredient.ofItems(BlocksCollection.ELDER_PRISMARINE_BRICKS))
+            createStairsRecipe(BlocksCollection.ELDER_PRISMARINE_BRICKS_STAIRS, Ingredient.ofItems(BlocksCollection.ELDER_PRISMARINE_BRICKS))
                 .criterion(hasItem(BlocksCollection.ELDER_PRISMARINE_BRICKS), conditionsFromItem(BlocksCollection.ELDER_PRISMARINE_BRICKS))
                 .offerTo(exporter, new Identifier(getRecipeName(BlocksCollection.ELDER_PRISMARINE_BRICKS_STAIRS)));
 
-            createStairsRecipe(BlocksCollection.ELDER_DARK_PRISMARINE, Ingredient.ofItems(BlocksCollection.ELDER_DARK_PRISMARINE))
+            createStairsRecipe(BlocksCollection.ELDER_DARK_PRISMARINE_STAIRS, Ingredient.ofItems(BlocksCollection.ELDER_DARK_PRISMARINE))
                 .criterion(hasItem(BlocksCollection.ELDER_DARK_PRISMARINE), conditionsFromItem(BlocksCollection.ELDER_DARK_PRISMARINE))
                 .offerTo(exporter, new Identifier(getRecipeName(BlocksCollection.ELDER_DARK_PRISMARINE_STAIRS)));
-
         }
         
     }
