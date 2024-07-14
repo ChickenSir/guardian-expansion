@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "guardianexpansion:elder_prismarine_bricks"
+  },
+  "result": "guardianexpansion:elder_prismarine_bricks_stairs"
+}

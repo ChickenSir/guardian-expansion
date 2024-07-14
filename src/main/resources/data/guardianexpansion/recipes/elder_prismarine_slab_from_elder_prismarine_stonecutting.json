@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "guardianexpansion:elder_prismarine"
+  },
+  "result": "guardianexpansion:elder_prismarine_slab"
+}

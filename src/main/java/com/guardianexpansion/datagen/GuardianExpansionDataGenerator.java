@@ -16,6 +16,7 @@ import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.recipe.Ingredient;
+import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.RegistryWrapper.WrapperLookup;
 import net.minecraft.registry.tag.BlockTags;
@@ -132,6 +133,34 @@ public class GuardianExpansionDataGenerator implements DataGeneratorEntrypoint {
             createStairsRecipe(BlocksCollection.ELDER_DARK_PRISMARINE_STAIRS, Ingredient.ofItems(BlocksCollection.ELDER_DARK_PRISMARINE))
                 .criterion(hasItem(BlocksCollection.ELDER_DARK_PRISMARINE), conditionsFromItem(BlocksCollection.ELDER_DARK_PRISMARINE))
                 .offerTo(exporter, new Identifier(getRecipeName(BlocksCollection.ELDER_DARK_PRISMARINE_STAIRS)));
+
+            createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.ELDER_PRISMARINE_SLAB, Ingredient.ofItems(BlocksCollection.ELDER_PRISMARINE))
+                .criterion(hasItem(BlocksCollection.ELDER_PRISMARINE), conditionsFromItem(BlocksCollection.ELDER_PRISMARINE))
+                .offerTo(exporter, new Identifier(getRecipeName(BlocksCollection.ELDER_PRISMARINE_SLAB)));
+
+            createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.ELDER_PRISMARINE_BRICKS_SLAB, Ingredient.ofItems(BlocksCollection.ELDER_PRISMARINE_BRICKS))
+                .criterion(hasItem(BlocksCollection.ELDER_PRISMARINE_BRICKS), conditionsFromItem(BlocksCollection.ELDER_PRISMARINE_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(BlocksCollection.ELDER_PRISMARINE_BRICKS_SLAB)));
+
+            createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.ELDER_DARK_PRISMARINE_SLAB, Ingredient.ofItems(BlocksCollection.ELDER_DARK_PRISMARINE))
+                .criterion(hasItem(BlocksCollection.ELDER_DARK_PRISMARINE), conditionsFromItem(BlocksCollection.ELDER_DARK_PRISMARINE))
+                .offerTo(exporter, new Identifier(getRecipeName(BlocksCollection.ELDER_DARK_PRISMARINE_SLAB)));
+
+            offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.ELDER_PRISMARINE_WALL, BlocksCollection.ELDER_PRISMARINE);
+            offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.ELDER_PRISMARINE_BRICKS_WALL, BlocksCollection.ELDER_PRISMARINE_BRICKS);
+            offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.ELDER_DARK_PRISMARINE_WALL, BlocksCollection.ELDER_DARK_PRISMARINE);
+
+            offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.ELDER_PRISMARINE_STAIRS, BlocksCollection.ELDER_PRISMARINE);
+            offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.ELDER_PRISMARINE_SLAB, BlocksCollection.ELDER_PRISMARINE);
+            offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.ELDER_PRISMARINE_WALL, BlocksCollection.ELDER_PRISMARINE);
+
+            offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.ELDER_PRISMARINE_BRICKS_STAIRS, BlocksCollection.ELDER_PRISMARINE_BRICKS);
+            offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.ELDER_PRISMARINE_BRICKS_SLAB, BlocksCollection.ELDER_PRISMARINE_BRICKS);
+            offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.ELDER_PRISMARINE_BRICKS_WALL, BlocksCollection.ELDER_PRISMARINE_BRICKS);
+
+            offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.ELDER_DARK_PRISMARINE_STAIRS, BlocksCollection.ELDER_DARK_PRISMARINE);
+            offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.ELDER_DARK_PRISMARINE_SLAB, BlocksCollection.ELDER_DARK_PRISMARINE);
+            offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.ELDER_DARK_PRISMARINE_WALL, BlocksCollection.ELDER_DARK_PRISMARINE);
         }
         
     }
