@@ -60,6 +60,7 @@ public class GuardianExpansion implements ModInitializer {
 			entries.add(BlocksCollection.ELDER_DARK_PRISMARINE_STAIRS);
 			entries.add(BlocksCollection.ELDER_DARK_PRISMARINE_SLAB);
 			entries.add(BlocksCollection.ELDER_DARK_PRISMARINE_WALL);
+			entries.add(BlocksCollection.PRISMARINE_CONVERTER);
 		})
 		.build();
 

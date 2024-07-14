@@ -1,5 +1,7 @@
 package com.guardianexpansion.Collections;
 
+import com.guardianexpansion.Blocks.PrismarineConverter;
+
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -29,6 +31,8 @@ public class BlocksCollection {
     public static final Block ELDER_DARK_PRISMARINE_STAIRS = new StairsBlock(ELDER_DARK_PRISMARINE.getDefaultState(), FabricBlockSettings.copyOf(Blocks.PRISMARINE).requiresTool());
     public static final Block ELDER_DARK_PRISMARINE_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.PRISMARINE).requiresTool());
     public static final Block ELDER_DARK_PRISMARINE_WALL = new WallBlock(FabricBlockSettings.copyOf(Blocks.PRISMARINE).requiresTool());
+
+    public static final Block PRISMARINE_CONVERTER = new PrismarineConverter(FabricBlockSettings.copyOf(Blocks.PRISMARINE).requiresTool());
 
     public static void Register(String modID) {
         // Register Blocks
@@ -61,5 +65,8 @@ public class BlocksCollection {
         Registry.register(Registries.ITEM, new Identifier(modID, "elder_dark_prismarine_slab"), new BlockItem(ELDER_DARK_PRISMARINE_SLAB, new FabricItemSettings()));
         Registry.register(Registries.BLOCK, new Identifier(modID, "elder_dark_prismarine_wall"), ELDER_DARK_PRISMARINE_WALL);
         Registry.register(Registries.ITEM, new Identifier(modID, "elder_dark_prismarine_wall"), new BlockItem(ELDER_DARK_PRISMARINE_WALL, new FabricItemSettings()));
+
+        Registry.register(Registries.BLOCK, new Identifier(modID, "prismarine_converter"), PRISMARINE_CONVERTER);
+        Registry.register(Registries.ITEM, new Identifier(modID, "prismarine_converter"), new BlockItem(PRISMARINE_CONVERTER, new FabricItemSettings()));
     }
 }
