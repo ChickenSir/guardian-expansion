@@ -25,7 +25,7 @@ public class BlocksCollection {
     public static final Block ELDER_PRISMARINE_WALL = new WallBlock(FabricBlockSettings.copyOf(Blocks.PRISMARINE).requiresTool());
 
     public static final Block ELDER_PRISMARINE_BRICK_STAIRS = new StairsBlock(ELDER_PRISMARINE_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.PRISMARINE).requiresTool());
-    public static final Block ELDER_PRISMARINE_BRICKS_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.PRISMARINE).requiresTool());
+    public static final Block ELDER_PRISMARINE_BRICK_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.PRISMARINE).requiresTool());
     public static final Block ELDER_PRISMARINE_BRICKS_WALL = new WallBlock(FabricBlockSettings.copyOf(Blocks.PRISMARINE).requiresTool());
 
     public static final Block ELDER_DARK_PRISMARINE_STAIRS = new StairsBlock(ELDER_DARK_PRISMARINE.getDefaultState(), FabricBlockSettings.copyOf(Blocks.PRISMARINE).requiresTool());
@@ -54,8 +54,8 @@ public class BlocksCollection {
 
         Registry.register(Registries.BLOCK, new Identifier(modID, "elder_prismarine_brick_stairs"), ELDER_PRISMARINE_BRICK_STAIRS);
         Registry.register(Registries.ITEM, new Identifier(modID, "elder_prismarine_brick_stairs"), new BlockItem(ELDER_PRISMARINE_BRICK_STAIRS, new FabricItemSettings()));
-        Registry.register(Registries.BLOCK, new Identifier(modID, "elder_prismarine_bricks_slab"), ELDER_PRISMARINE_BRICKS_SLAB);
-        Registry.register(Registries.ITEM, new Identifier(modID, "elder_prismarine_bricks_slab"), new BlockItem(ELDER_PRISMARINE_BRICKS_SLAB, new FabricItemSettings()));
+        Registry.register(Registries.BLOCK, new Identifier(modID, "elder_prismarine_brick_slab"), ELDER_PRISMARINE_BRICK_SLAB);
+        Registry.register(Registries.ITEM, new Identifier(modID, "elder_prismarine_brick_slab"), new BlockItem(ELDER_PRISMARINE_BRICK_SLAB, new FabricItemSettings()));
         Registry.register(Registries.BLOCK, new Identifier(modID, "elder_prismarine_bricks_wall"), ELDER_PRISMARINE_BRICKS_WALL);
         Registry.register(Registries.ITEM, new Identifier(modID, "elder_prismarine_bricks_wall"), new BlockItem(ELDER_PRISMARINE_BRICKS_WALL, new FabricItemSettings()));
 

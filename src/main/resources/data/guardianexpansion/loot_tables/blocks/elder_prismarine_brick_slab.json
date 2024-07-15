@@ -11,7 +11,7 @@
               "add": false,
               "conditions": [
                 {
-                  "block": "guardianexpansion:elder_prismarine_bricks_slab",
+                  "block": "guardianexpansion:elder_prismarine_brick_slab",
                   "condition": "minecraft:block_state_property",
                   "properties": {
                     "type": "double"
@@ -25,7 +25,7 @@
               "function": "minecraft:explosion_decay"
             }
           ],
-          "name": "guardianexpansion:elder_prismarine_bricks_slab"
+          "name": "guardianexpansion:elder_prismarine_brick_slab"
         }
       ],
       "rolls": 1.0

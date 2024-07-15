@@ -1,13 +1,13 @@
 {
   "variants": {
     "type=bottom": {
-      "model": "guardianexpansion:block/elder_prismarine_bricks_slab"
+      "model": "guardianexpansion:block/elder_prismarine_brick_slab"
     },
     "type=double": {
       "model": "guardianexpansion:block/elder_prismarine_bricks"
     },
     "type=top": {
-      "model": "guardianexpansion:block/elder_prismarine_bricks_slab_top"
+      "model": "guardianexpansion:block/elder_prismarine_brick_slab_top"
     }
   }
 }
