@@ -37,10 +37,10 @@ public class ItemsCollection {
 
     // Mod Armor
     public static final ArmorMaterial PRISMARINE_ARMOR_MATERIAL = new PrismarineArmorMaterial();
-    public static final Item PRISMARINE_HELMET = new ArmorItem(PRISMARINE_ARMOR_MATERIAL, Type.HELMET, new Item.Settings());
+    public static final Item PRISMARINE_HELMET = new PrismarineArmorItem(PRISMARINE_ARMOR_MATERIAL, Type.HELMET, new Item.Settings());
     public static final Item PRISMARINE_CHESTPLATE = new PrismarineArmorItem(PRISMARINE_ARMOR_MATERIAL, Type.CHESTPLATE, new Item.Settings());
-    public static final Item PRISMARINE_LEGGINGS = new ArmorItem(PRISMARINE_ARMOR_MATERIAL, Type.LEGGINGS, new Item.Settings());
-    public static final Item PRISMARINE_BOOTS = new ArmorItem(PRISMARINE_ARMOR_MATERIAL, Type.BOOTS, new Item.Settings());
+    public static final Item PRISMARINE_LEGGINGS = new PrismarineArmorItem(PRISMARINE_ARMOR_MATERIAL, Type.LEGGINGS, new Item.Settings());
+    public static final Item PRISMARINE_BOOTS = new PrismarineArmorItem(PRISMARINE_ARMOR_MATERIAL, Type.BOOTS, new Item.Settings());
 
     public static final ArmorMaterial GUARDIAN_ARMOR_MATERIAL = new GuardianArmorMaterial();
     public static final Item GUARDIAN_HELMET = new ArmorItem(GUARDIAN_ARMOR_MATERIAL, Type.HELMET, new Item.Settings());

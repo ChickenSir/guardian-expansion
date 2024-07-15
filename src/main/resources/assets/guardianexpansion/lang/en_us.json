@@ -32,5 +32,7 @@
     "block.guardianexpansion.elder_dark_prismarine_stairs": "Elder Dark Prismarine Stairs",
     "block.guardianexpansion.elder_dark_prismarine_slab": "Elder Dark Prismarine Slab",
     "block.guardianexpansion.elder_dark_prismarine_wall": "Elder Dark Prismarine Wall",
-    "block.guardianexpansion.prismarine_converter": "Prismarine Converter"
+    "block.guardianexpansion.prismarine_converter": "Prismarine Converter",
+    "tooltip.guardianexpansion.generic.when_full_set": "When Full Set Equipped:",
+    "tooltip.guardianexpansion.prismarine_armor.status_buff": "+2 Minutes of Water Breathing"
 }
