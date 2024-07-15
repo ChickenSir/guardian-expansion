@@ -3,6 +3,7 @@ package com.guardianexpansion.Materials;
 import net.minecraft.item.ArmorItem.Type;
 
 import com.guardianexpansion.GuardianExpansion;
+import com.guardianexpansion.Collections.ItemsCollection;
 
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.Items;
@@ -51,7 +52,7 @@ public class ElderGuardianArmorMaterial implements ArmorMaterial {
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(Items.PRISMARINE);
+        return Ingredient.ofItems(ItemsCollection.ELDER_PRISMARINE_SHARD);
     }
 
     @Override

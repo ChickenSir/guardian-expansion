@@ -50,7 +50,7 @@ public class GuardianArmorMaterial implements ArmorMaterial {
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(Items.PRISMARINE);
+        return Ingredient.ofItems(Items.PRISMARINE_SHARD);
     }
 
     @Override
