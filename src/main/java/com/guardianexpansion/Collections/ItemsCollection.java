@@ -1,6 +1,7 @@
 package com.guardianexpansion.Collections;
 
 import com.guardianexpansion.Items.GuardianBeamItem;
+import com.guardianexpansion.Items.PrismarineArmorItem;
 import com.guardianexpansion.Materials.ElderGuardianArmorMaterial;
 import com.guardianexpansion.Materials.GuardianArmorMaterial;
 import com.guardianexpansion.Materials.PrismarineArmorMaterial;
@@ -37,7 +38,7 @@ public class ItemsCollection {
     // Mod Armor
     public static final ArmorMaterial PRISMARINE_ARMOR_MATERIAL = new PrismarineArmorMaterial();
     public static final Item PRISMARINE_HELMET = new ArmorItem(PRISMARINE_ARMOR_MATERIAL, Type.HELMET, new Item.Settings());
-    public static final Item PRISMARINE_CHESTPLATE = new ArmorItem(PRISMARINE_ARMOR_MATERIAL, Type.CHESTPLATE, new Item.Settings());
+    public static final Item PRISMARINE_CHESTPLATE = new PrismarineArmorItem(PRISMARINE_ARMOR_MATERIAL, Type.CHESTPLATE, new Item.Settings());
     public static final Item PRISMARINE_LEGGINGS = new ArmorItem(PRISMARINE_ARMOR_MATERIAL, Type.LEGGINGS, new Item.Settings());
     public static final Item PRISMARINE_BOOTS = new ArmorItem(PRISMARINE_ARMOR_MATERIAL, Type.BOOTS, new Item.Settings());
 
