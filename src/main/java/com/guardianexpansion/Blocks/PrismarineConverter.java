@@ -64,7 +64,7 @@ public class PrismarineConverter extends Block {
 
                 world.playSound(null, pos, SoundEvents.BLOCK_CONDUIT_ACTIVATE, SoundCategory.BLOCKS, 0.5f, 1f);
             } else {
-                player.sendMessage(Text.translatable("Must be a prismarine block!").formatted(Formatting.AQUA));
+                player.sendMessage(Text.translatable("text.guardianexpansion.prismarine_converter.incorrect_block").formatted(Formatting.AQUA));
                 world.playSound(null, pos, SoundEvents.BLOCK_CONDUIT_DEACTIVATE, SoundCategory.BLOCKS, 0.25f, 1f);
             }
         }

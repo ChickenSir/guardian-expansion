@@ -35,8 +35,10 @@ public class ElderGuardianArmorItem extends ArmorItem {
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
         if (!world.isClient) {
             if (entity instanceof PlayerEntity player) {
-                if (isWearingFullSet(player) && player.isInsideWaterOrBubbleColumn()) {
+                if (isWearingFullSet(player) && player.isSubmergedInWater()) {
                     player.addStatusEffect(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 1, 0, false, false, true));
+                }
+                if (isWearingFullSet(player) && player.isInsideWaterOrBubbleColumn()) {
                     player.addStatusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 1, 0, false, false, true));
                 }
             }
