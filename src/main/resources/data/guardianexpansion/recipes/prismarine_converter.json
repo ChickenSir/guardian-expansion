@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "PHP",
+        "PEP"
+    ],
+    "key": {
+        "P": {
+            "item": "minecraft:prismarine"
+        },
+        "E": {
+            "item": "guardianexpansion:elder_prismarine_shard"
+        },
+        "H": {
+            "item": "minecraft:heart_of_the_sea"
+        }
+    },
+    "result": {
+        "item": "guardianexpansion:prismarine_converter"
+    }
+}
