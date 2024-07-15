@@ -14,7 +14,9 @@ import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.Properties;
+import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
+import net.minecraft.util.Formatting;
 import net.minecraft.util.Hand;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.hit.BlockHitResult;
@@ -60,7 +62,10 @@ public class PrismarineConverter extends Block {
                 ItemStack convertedItem = new ItemStack(Registries.ITEM.get(new Identifier(convertedID)), itemAmount);
                 player.getInventory().offerOrDrop(convertedItem);
 
-                world.playSound(null, pos, SoundEvents.BLOCK_ENCHANTMENT_TABLE_USE, SoundCategory.BLOCKS);
+                world.playSound(null, pos, SoundEvents.BLOCK_CONDUIT_ACTIVATE, SoundCategory.BLOCKS, 0.5f, 1f);
+            } else {
+                player.sendMessage(Text.translatable("Must be a prismarine block!").formatted(Formatting.AQUA));
+                world.playSound(null, pos, SoundEvents.BLOCK_CONDUIT_DEACTIVATE, SoundCategory.BLOCKS, 0.25f, 1f);
             }
         }
 
