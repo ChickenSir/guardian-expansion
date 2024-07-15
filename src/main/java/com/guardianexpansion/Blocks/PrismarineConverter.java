@@ -7,6 +7,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.item.ItemStack;
+import net.minecraft.registry.Registries;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.tag.TagKey;
 import net.minecraft.sound.SoundCategory;
@@ -53,7 +54,11 @@ public class PrismarineConverter extends Block {
             if (playerHand.isIn(CONVERTABLE_BLOCKS)) {
                 int itemAmount = player.getInventory().getMainHandStack().getCount();
                 
+                String convertedID = "guardianexpansion:" + "elder_" + playerHand.getItem().toString();
                 player.getInventory().getMainHandStack().decrement(itemAmount);
+
+                ItemStack convertedItem = new ItemStack(Registries.ITEM.get(new Identifier(convertedID)), itemAmount);
+                player.getInventory().offerOrDrop(convertedItem);
 
                 world.playSound(null, pos, SoundEvents.BLOCK_ENCHANTMENT_TABLE_USE, SoundCategory.BLOCKS);
             }
