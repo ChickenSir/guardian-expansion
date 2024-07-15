@@ -54,7 +54,7 @@ public class GuardianExpansionDataGenerator implements DataGeneratorEntrypoint {
 
             getOrCreateTagBuilder(BlockTags.STAIRS)
                 .add(BlocksCollection.ELDER_PRISMARINE_STAIRS)
-                .add(BlocksCollection.ELDER_PRISMARINE_BRICKS_STAIRS)
+                .add(BlocksCollection.ELDER_PRISMARINE_BRICK_STAIRS)
                 .add(BlocksCollection.ELDER_DARK_PRISMARINE_STAIRS);
         }
         
@@ -71,7 +71,7 @@ public class GuardianExpansionDataGenerator implements DataGeneratorEntrypoint {
             addDrop(BlocksCollection.ELDER_PRISMARINE_SLAB, slabDrops(BlocksCollection.ELDER_PRISMARINE_SLAB));
             addDrop(BlocksCollection.ELDER_PRISMARINE_WALL);
 
-            addDrop(BlocksCollection.ELDER_PRISMARINE_BRICKS_STAIRS);
+            addDrop(BlocksCollection.ELDER_PRISMARINE_BRICK_STAIRS);
             addDrop(BlocksCollection.ELDER_PRISMARINE_BRICKS_SLAB, slabDrops(BlocksCollection.ELDER_PRISMARINE_BRICKS_SLAB));
             addDrop(BlocksCollection.ELDER_PRISMARINE_BRICKS_WALL);
 
@@ -98,7 +98,7 @@ public class GuardianExpansionDataGenerator implements DataGeneratorEntrypoint {
             elder_prismarine_pool.slab(BlocksCollection.ELDER_PRISMARINE_SLAB);
             elder_prismarine_pool.wall(BlocksCollection.ELDER_PRISMARINE_WALL);
 
-            elder_prismarine_bricks_pool.stairs(BlocksCollection.ELDER_PRISMARINE_BRICKS_STAIRS);
+            elder_prismarine_bricks_pool.stairs(BlocksCollection.ELDER_PRISMARINE_BRICK_STAIRS);
             elder_prismarine_bricks_pool.slab(BlocksCollection.ELDER_PRISMARINE_BRICKS_SLAB);
             elder_prismarine_bricks_pool.wall(BlocksCollection.ELDER_PRISMARINE_BRICKS_WALL);
 
@@ -126,9 +126,9 @@ public class GuardianExpansionDataGenerator implements DataGeneratorEntrypoint {
                 .criterion(hasItem(BlocksCollection.ELDER_PRISMARINE), conditionsFromItem(BlocksCollection.ELDER_PRISMARINE))
                 .offerTo(exporter, new Identifier(getRecipeName(BlocksCollection.ELDER_PRISMARINE_STAIRS)));
 
-            createStairsRecipe(BlocksCollection.ELDER_PRISMARINE_BRICKS_STAIRS, Ingredient.ofItems(BlocksCollection.ELDER_PRISMARINE_BRICKS))
+            createStairsRecipe(BlocksCollection.ELDER_PRISMARINE_BRICK_STAIRS, Ingredient.ofItems(BlocksCollection.ELDER_PRISMARINE_BRICKS))
                 .criterion(hasItem(BlocksCollection.ELDER_PRISMARINE_BRICKS), conditionsFromItem(BlocksCollection.ELDER_PRISMARINE_BRICKS))
-                .offerTo(exporter, new Identifier(getRecipeName(BlocksCollection.ELDER_PRISMARINE_BRICKS_STAIRS)));
+                .offerTo(exporter, new Identifier(getRecipeName(BlocksCollection.ELDER_PRISMARINE_BRICK_STAIRS)));
 
             createStairsRecipe(BlocksCollection.ELDER_DARK_PRISMARINE_STAIRS, Ingredient.ofItems(BlocksCollection.ELDER_DARK_PRISMARINE))
                 .criterion(hasItem(BlocksCollection.ELDER_DARK_PRISMARINE), conditionsFromItem(BlocksCollection.ELDER_DARK_PRISMARINE))
@@ -154,7 +154,7 @@ public class GuardianExpansionDataGenerator implements DataGeneratorEntrypoint {
             offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.ELDER_PRISMARINE_SLAB, BlocksCollection.ELDER_PRISMARINE);
             offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.ELDER_PRISMARINE_WALL, BlocksCollection.ELDER_PRISMARINE);
 
-            offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.ELDER_PRISMARINE_BRICKS_STAIRS, BlocksCollection.ELDER_PRISMARINE_BRICKS);
+            offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.ELDER_PRISMARINE_BRICK_STAIRS, BlocksCollection.ELDER_PRISMARINE_BRICKS);
             offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.ELDER_PRISMARINE_BRICKS_SLAB, BlocksCollection.ELDER_PRISMARINE_BRICKS);
             offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.ELDER_PRISMARINE_BRICKS_WALL, BlocksCollection.ELDER_PRISMARINE_BRICKS);
 

@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:elder_prismarine_bricks_stairs"
+        "recipe": "minecraft:elder_prismarine_brick_stairs"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:elder_prismarine_bricks_stairs"
+      "minecraft:elder_prismarine_brick_stairs"
     ]
   },
   "sends_telemetry_event": false
