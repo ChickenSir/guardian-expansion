@@ -1,5 +1,7 @@
 package com.guardianexpansion.Collections;
 
+import com.guardianexpansion.Items.ElderGuardianArmorItem;
+import com.guardianexpansion.Items.GuardianArmorItem;
 import com.guardianexpansion.Items.GuardianBeamItem;
 import com.guardianexpansion.Items.PrismarineArmorItem;
 import com.guardianexpansion.Materials.ElderGuardianArmorMaterial;
@@ -18,7 +20,6 @@ import net.minecraft.item.HoeItem;
 import net.minecraft.item.PickaxeItem;
 import net.minecraft.item.ShovelItem;
 import net.minecraft.item.SwordItem;
-import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorItem.Type;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.Item;
@@ -43,16 +44,16 @@ public class ItemsCollection {
     public static final Item PRISMARINE_BOOTS = new PrismarineArmorItem(PRISMARINE_ARMOR_MATERIAL, Type.BOOTS, new Item.Settings());
 
     public static final ArmorMaterial GUARDIAN_ARMOR_MATERIAL = new GuardianArmorMaterial();
-    public static final Item GUARDIAN_HELMET = new ArmorItem(GUARDIAN_ARMOR_MATERIAL, Type.HELMET, new Item.Settings());
-    public static final Item GUARDIAN_CHESTPLATE = new ArmorItem(GUARDIAN_ARMOR_MATERIAL, Type.CHESTPLATE, new Item.Settings());
-    public static final Item GUARDIAN_LEGGINGS = new ArmorItem(GUARDIAN_ARMOR_MATERIAL, Type.LEGGINGS, new Item.Settings());
-    public static final Item GUARDIAN_BOOTS = new ArmorItem(GUARDIAN_ARMOR_MATERIAL, Type.BOOTS, new Item.Settings());
+    public static final Item GUARDIAN_HELMET = new GuardianArmorItem(GUARDIAN_ARMOR_MATERIAL, Type.HELMET, new Item.Settings());
+    public static final Item GUARDIAN_CHESTPLATE = new GuardianArmorItem(GUARDIAN_ARMOR_MATERIAL, Type.CHESTPLATE, new Item.Settings());
+    public static final Item GUARDIAN_LEGGINGS = new GuardianArmorItem(GUARDIAN_ARMOR_MATERIAL, Type.LEGGINGS, new Item.Settings());
+    public static final Item GUARDIAN_BOOTS = new GuardianArmorItem(GUARDIAN_ARMOR_MATERIAL, Type.BOOTS, new Item.Settings());
 
     public static final ArmorMaterial ELDER_GUARDIAN_ARMOR_MATERIAL = new ElderGuardianArmorMaterial();
-    public static final Item ELDER_GUARDIAN_HELMET = new ArmorItem(ELDER_GUARDIAN_ARMOR_MATERIAL, Type.HELMET, new Item.Settings());
-    public static final Item ELDER_GUARDIAN_CHESTPLATE = new ArmorItem(ELDER_GUARDIAN_ARMOR_MATERIAL, Type.CHESTPLATE, new Item.Settings());
-    public static final Item ELDER_GUARDIAN_LEGGINGS = new ArmorItem(ELDER_GUARDIAN_ARMOR_MATERIAL, Type.LEGGINGS, new Item.Settings());
-    public static final Item ELDER_GUARDIAN_BOOTS = new ArmorItem(ELDER_GUARDIAN_ARMOR_MATERIAL, Type.BOOTS, new Item.Settings());
+    public static final Item ELDER_GUARDIAN_HELMET = new ElderGuardianArmorItem(ELDER_GUARDIAN_ARMOR_MATERIAL, Type.HELMET, new Item.Settings());
+    public static final Item ELDER_GUARDIAN_CHESTPLATE = new ElderGuardianArmorItem(ELDER_GUARDIAN_ARMOR_MATERIAL, Type.CHESTPLATE, new Item.Settings());
+    public static final Item ELDER_GUARDIAN_LEGGINGS = new ElderGuardianArmorItem(ELDER_GUARDIAN_ARMOR_MATERIAL, Type.LEGGINGS, new Item.Settings());
+    public static final Item ELDER_GUARDIAN_BOOTS = new ElderGuardianArmorItem(ELDER_GUARDIAN_ARMOR_MATERIAL, Type.BOOTS, new Item.Settings());
 
     // Mod Weapons
     public static final Item GUARDIAN_BEAM = new GuardianBeamItem(new FabricItemSettings().maxCount(1));

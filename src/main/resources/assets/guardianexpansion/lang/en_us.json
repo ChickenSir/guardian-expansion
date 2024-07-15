@@ -34,5 +34,8 @@
     "block.guardianexpansion.elder_dark_prismarine_wall": "Elder Dark Prismarine Wall",
     "block.guardianexpansion.prismarine_converter": "Prismarine Converter",
     "tooltip.guardianexpansion.generic.when_full_set": "When Full Set Equipped:",
-    "tooltip.guardianexpansion.prismarine_armor.status_buff": "+2 Minutes of Water Breathing"
+    "tooltip.guardianexpansion.prismarine_armor.status_buff": "+2 Minutes of Water Breathing",
+    "tooltip.guardianexpansion.guardian_armor.status_buff": "+4 Minutes of Water Breathing",
+    "tooltip.guardianexpansion.elder_guardian_armor.status_buff": "+Unlimited Water Breathing",
+    "tooltip.guardianexpansion.elder_guardian_armor.status_buff2": "+9 Underwater Movement Speed"
 }
