@@ -35,6 +35,7 @@ public class GuardianArmorItem extends ArmorItem {
         if (!world.isClient) {
             if (entity instanceof PlayerEntity player) {
                 if (isWearingFullSet(player) && !player.isSubmergedInWater()) {
+                    // Apply status effect if full set is worn and player is under water
                     player.addStatusEffect(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 4800, 0, false, false, true));
                 }
             }
@@ -47,6 +48,7 @@ public class GuardianArmorItem extends ArmorItem {
         ItemStack legStack = player.getEquippedStack(EquipmentSlot.LEGS);
         ItemStack bootsStack = player.getEquippedStack(EquipmentSlot.FEET);
         
+        // Check if player is wearing full set
         return headStack.isOf(ItemsCollection.GUARDIAN_HELMET) &&
             chestStack.isOf(ItemsCollection.GUARDIAN_CHESTPLATE) &&
             legStack.isOf(ItemsCollection.GUARDIAN_LEGGINGS) &&

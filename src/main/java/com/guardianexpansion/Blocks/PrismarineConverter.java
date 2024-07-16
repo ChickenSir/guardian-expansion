@@ -51,19 +51,25 @@ public class PrismarineConverter extends Block {
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult result) {
         if (!world.isClient()) {
 
+            // Get item stack from main hand
             ItemStack playerHand = player.getMainHandStack();
 
+            // Check if the item in main hand is a convertable block
             if (playerHand.isIn(CONVERTABLE_BLOCKS)) {
+                // Get the amount of blocks the player is holding
                 int itemAmount = player.getInventory().getMainHandStack().getCount();
                 
+                // Create converted block item ID and remove blocks from hand
                 String convertedID = "guardianexpansion:" + "elder_" + playerHand.getItem().toString();
                 player.getInventory().getMainHandStack().decrement(itemAmount);
 
+                // Give converted block to player
                 ItemStack convertedItem = new ItemStack(Registries.ITEM.get(new Identifier(convertedID)), itemAmount);
                 player.getInventory().offerOrDrop(convertedItem);
 
                 world.playSound(null, pos, SoundEvents.BLOCK_CONDUIT_ACTIVATE, SoundCategory.BLOCKS, 0.5f, 1f);
             } else {
+                // Player does not have a convertable block in hand
                 player.sendMessage(Text.translatable("text.guardianexpansion.prismarine_converter.incorrect_block").formatted(Formatting.AQUA));
                 world.playSound(null, pos, SoundEvents.BLOCK_CONDUIT_DEACTIVATE, SoundCategory.BLOCKS, 0.25f, 1f);
             }

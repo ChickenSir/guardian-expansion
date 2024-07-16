@@ -36,9 +36,11 @@ public class ElderGuardianArmorItem extends ArmorItem {
         if (!world.isClient) {
             if (entity instanceof PlayerEntity player) {
                 if (isWearingFullSet(player) && player.isSubmergedInWater()) {
+                    // Apply status effect if full set is worn and player is under water
                     player.addStatusEffect(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 1, 0, false, false, true));
                 }
                 if (isWearingFullSet(player) && player.isInsideWaterOrBubbleColumn()) {
+                    // Apply status effect if full set is worn and player is in water
                     player.addStatusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 1, 0, false, false, true));
                 }
             }
@@ -51,6 +53,7 @@ public class ElderGuardianArmorItem extends ArmorItem {
         ItemStack legStack = player.getEquippedStack(EquipmentSlot.LEGS);
         ItemStack bootsStack = player.getEquippedStack(EquipmentSlot.FEET);
         
+        // Check if player is wearing full set
         return headStack.isOf(ItemsCollection.ELDER_GUARDIAN_HELMET) &&
             chestStack.isOf(ItemsCollection.ELDER_GUARDIAN_CHESTPLATE) &&
             legStack.isOf(ItemsCollection.ELDER_GUARDIAN_LEGGINGS) &&

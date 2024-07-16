@@ -20,6 +20,7 @@ public class GuardianBeamItem extends Item {
         if (!world.isClient()) {
             ItemStack stack = user.getStackInHand(hand);
             if (stack.getDamage() >= stack.getMaxDamage()) {
+                // Put item on cooldown when it reaches 0 durability
                 user.getItemCooldownManager().set(this, 300);
                 stack.setDamage(0);
             } else {
