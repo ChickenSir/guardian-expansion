@@ -56,8 +56,8 @@ public class ItemsCollection {
     public static final Item ELDER_GUARDIAN_BOOTS = new ElderGuardianArmorItem(ELDER_GUARDIAN_ARMOR_MATERIAL, Type.BOOTS, new Item.Settings());
 
     // Mod Weapons
-    public static final Item GUARDIAN_BEAM = new GuardianBeamItem(new FabricItemSettings().maxCount(1));
-    public static final Item ELDER_GUARDIAN_BEAM = new Item(new FabricItemSettings().maxCount(1));
+    public static final Item GUARDIAN_BEAM = new GuardianBeamItem(new FabricItemSettings().maxCount(1).maxDamage(50));
+    public static final Item ELDER_GUARDIAN_BEAM = new Item(new FabricItemSettings().maxCount(1).maxDamage(100));
 
     public static void Register(String modID) {
         // Register Items
