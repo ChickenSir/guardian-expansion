@@ -19,13 +19,14 @@ public class GuardianBeamItem extends Item {
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         if (!world.isClient()) {
             ItemStack stack = user.getStackInHand(hand);
-            if (stack.getDamage() >= stack.getMaxDamage() - 1) {
+            if (stack.getDamage() >= stack.getMaxDamage()) {
                 user.getItemCooldownManager().set(this, 300);
                 stack.setDamage(0);
-            }
-            stack.setDamage(stack.getDamage() + 1);
+            } else {
+                stack.setDamage(stack.getDamage() + 1);
 
-            world.playSound(null, user.getBlockPos(), SoundEvents.ENTITY_GUARDIAN_ATTACK, SoundCategory.PLAYERS, 1f, 1f);
+                world.playSound(null, user.getBlockPos(), SoundEvents.ENTITY_GUARDIAN_ATTACK, SoundCategory.PLAYERS, 1f, 1f);
+            }
         }
 
         return TypedActionResult.pass(user.getStackInHand(hand));
