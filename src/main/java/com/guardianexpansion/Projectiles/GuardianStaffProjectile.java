@@ -17,13 +17,16 @@ import net.minecraft.util.hit.HitResult;
 import net.minecraft.world.World;
 
 public class GuardianStaffProjectile extends ThrownItemEntity {
+    public float damage;
 
     public GuardianStaffProjectile(EntityType<? extends ThrownItemEntity> entityType, World world) {
         super(entityType, world);
+        damage = 2;
     }
 
     public GuardianStaffProjectile(World world, LivingEntity owner) {
         super(ProjectilesCollection.GUARDIAN_STAFF_PROJECTILE_ENTITY_TYPE, owner, world);
+        damage = 2;
     }
 
     @Override
@@ -35,7 +38,7 @@ public class GuardianStaffProjectile extends ThrownItemEntity {
     protected void onEntityHit(EntityHitResult entityHitResult) {
         super.onEntityHit(entityHitResult);
         Entity entity = entityHitResult.getEntity();
-        float i = entity instanceof GuardianEntity ? 4 : 2;
+        float i = entity instanceof GuardianEntity ? damage+2 : damage;
         entity.damage(this.getDamageSources().thrown(this, this.getOwner()), i);
     }
 
@@ -51,6 +54,10 @@ public class GuardianStaffProjectile extends ThrownItemEntity {
     @Override
     public Packet<ClientPlayPacketListener> createSpawnPacket() {
         return new EntitySpawnS2CPacket(this);
+    }
+
+    public void setDamage(float damage) {
+        this.damage = damage;
     }
     
 }
