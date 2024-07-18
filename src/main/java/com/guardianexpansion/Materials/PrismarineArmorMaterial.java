@@ -17,7 +17,7 @@ public class PrismarineArmorMaterial implements ArmorMaterial {
     private static final int enchantability = 12;
     private static final String name = "prismarine";
     private static final float toughness = 0f;
-    private static float knockbackResistance = 0.5f;
+    private static float knockbackResistance = 0.1f;
 
     @Override
     public int getDurability(Type type) {

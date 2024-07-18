@@ -16,7 +16,7 @@ public class GuardianArmorMaterial implements ArmorMaterial {
     private static final int enchantability = 15;
     private static final String name = "armor_guardian";
     private static final float toughness = 1f;
-    private static float knockbackResistance = 1f;
+    private static float knockbackResistance = 0.2f;
 
     @Override
     public int getDurability(Type type) {
