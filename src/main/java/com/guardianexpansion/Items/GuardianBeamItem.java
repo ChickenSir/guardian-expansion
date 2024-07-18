@@ -21,19 +21,19 @@ public class GuardianBeamItem extends Item {
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         if (!world.isClient()) {
             ItemStack stack = user.getStackInHand(hand);
+            stack.setDamage(stack.getDamage() + 1);
+
+            GuardianStaffProjectile proj = new GuardianStaffProjectile(world, user);
+            proj.setVelocity(user, user.getPitch(), user.getYaw(), 0.0f, 2.5f, 1.0f);
+            world.spawnEntity(proj);
+
+            world.playSound(null, user.getBlockPos(), SoundEvents.BLOCK_BUBBLE_COLUMN_WHIRLPOOL_INSIDE, SoundCategory.PLAYERS, 1f, 1.5f);
+
             if (stack.getDamage() >= stack.getMaxDamage()) {
                 // Put item on cooldown when it reaches 0 durability
                 user.getItemCooldownManager().set(this, 300);
                 stack.setDamage(0);
             } else {
-                stack.setDamage(stack.getDamage() + 1);
-
-                GuardianStaffProjectile proj = new GuardianStaffProjectile(world, user);
-                proj.setVelocity(user, user.getPitch(), user.getYaw(), 0.0f, 2.5f, 1.0f);
-                world.spawnEntity(proj);
-
-                world.playSound(null, user.getBlockPos(), SoundEvents.BLOCK_BUBBLE_COLUMN_WHIRLPOOL_INSIDE, SoundCategory.PLAYERS, 1f, 1.5f);
-
                 user.getItemCooldownManager().set(this, 20);
             }
         }
