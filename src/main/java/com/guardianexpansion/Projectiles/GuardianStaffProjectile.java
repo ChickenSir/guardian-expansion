@@ -21,15 +21,20 @@ import net.minecraft.world.World;
 
 public class GuardianStaffProjectile extends ThrownItemEntity {
     public float damage;
+    private int despawnTimer;
 
     public GuardianStaffProjectile(EntityType<? extends ThrownItemEntity> entityType, World world) {
         super(entityType, world);
+        this.setNoGravity(true);
         damage = 6;
+        despawnTimer = 0;
     }
 
     public GuardianStaffProjectile(World world, LivingEntity owner) {
         super(ProjectilesCollection.GUARDIAN_STAFF_PROJECTILE_ENTITY_TYPE, owner, world);
+        this.setNoGravity(true);
         damage = 6;
+        despawnTimer = 0;
     }
 
     @Override
@@ -50,7 +55,7 @@ public class GuardianStaffProjectile extends ThrownItemEntity {
             entity.damage(this.getDamageSources().thrown(this, this.getOwner()), damage);
         }
 
-        if (entity instanceof LivingEntity livingEntity) {
+        if (entity instanceof LivingEntity livingEntity && entity != this.getOwner()) {
             livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 5, 0, false, true, true));
         }
     }
@@ -67,6 +72,16 @@ public class GuardianStaffProjectile extends ThrownItemEntity {
     @Override
     public Packet<ClientPlayPacketListener> createSpawnPacket() {
         return new EntitySpawnS2CPacket(this);
+    }
+
+    @Override
+    public void tick() {
+        super.tick();
+        if (despawnTimer >= 60) {
+            this.discard();
+        } else {
+            despawnTimer++;
+        }
     }
 
     public void setDamage(float damage) {
