@@ -33,7 +33,7 @@ public class ElderGuardianBeamItem extends Item {
                 proj.setVelocity(user, user.getPitch(), user.getYaw(), 0.0f, 2.5f, 1.0f);
                 world.spawnEntity(proj);
 
-                world.playSound(null, user.getBlockPos(), SoundEvents.ENTITY_GUARDIAN_ATTACK, SoundCategory.PLAYERS, 1f, 1.5f);
+                world.playSound(null, user.getBlockPos(), SoundEvents.BLOCK_BUBBLE_COLUMN_WHIRLPOOL_INSIDE, SoundCategory.PLAYERS, 1f, 1.5f);
 
                 user.getItemCooldownManager().set(this, 20);
             }

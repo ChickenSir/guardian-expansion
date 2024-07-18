@@ -38,5 +38,6 @@
     "tooltip.guardianexpansion.prismarine_armor.status_buff": "+2 Minutes of Water Breathing",
     "tooltip.guardianexpansion.guardian_armor.status_buff": "+4 Minutes of Water Breathing",
     "tooltip.guardianexpansion.elder_guardian_armor.status_buff": "+Unlimited Water Breathing",
-    "tooltip.guardianexpansion.elder_guardian_armor.status_buff2": "+9 Underwater Movement Speed"
+    "tooltip.guardianexpansion.elder_guardian_armor.status_buff2": "+9 Underwater Movement Speed",
+    "item.guardianexpansion.guardian_staff_projectile_item": "Guardian Staff Projectile"
 }
