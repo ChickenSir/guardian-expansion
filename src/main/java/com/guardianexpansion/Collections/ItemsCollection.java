@@ -59,6 +59,9 @@ public class ItemsCollection {
     public static final Item GUARDIAN_BEAM = new GuardianBeamItem(new FabricItemSettings().maxCount(1).maxDamage(50));
     public static final Item ELDER_GUARDIAN_BEAM = new Item(new FabricItemSettings().maxCount(1).maxDamage(100));
 
+    // Mod Weapon Projectile Item
+    public static final Item GUARDIAN_STAFF_PROJ_ITEM = new Item(new FabricItemSettings());
+
     public static void Register(String modID) {
         // Register Items
         Registry.register(Registries.ITEM, new Identifier(modID, "elder_prismarine_shard"), ELDER_PRISMARINE_SHARD);
@@ -90,5 +93,8 @@ public class ItemsCollection {
         // Mod Weapons
         Registry.register(Registries.ITEM, new Identifier(modID, "guardian_beam"), GUARDIAN_BEAM);
         Registry.register(Registries.ITEM, new Identifier(modID, "elder_guardian_beam"), ELDER_GUARDIAN_BEAM);
+
+        // Mod Weapon Projectile Item
+        Registry.register(Registries.ITEM, new Identifier(modID, "guardian_staff_projectile_item"), GUARDIAN_STAFF_PROJ_ITEM);
     }
 }

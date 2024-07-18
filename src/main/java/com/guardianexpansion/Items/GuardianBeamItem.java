@@ -1,5 +1,7 @@
 package com.guardianexpansion.Items;
 
+import com.guardianexpansion.Projectiles.GuardianStaffProjectile;
+
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -26,7 +28,13 @@ public class GuardianBeamItem extends Item {
             } else {
                 stack.setDamage(stack.getDamage() + 1);
 
-                world.playSound(null, user.getBlockPos(), SoundEvents.ENTITY_GUARDIAN_ATTACK, SoundCategory.PLAYERS, 1f, 1f);
+                GuardianStaffProjectile proj = new GuardianStaffProjectile(world, user);
+                proj.setVelocity(user, user.getPitch(), user.getYaw(), 0.0f, 2.5f, 1.0f);
+                world.spawnEntity(proj);
+
+                world.playSound(null, user.getBlockPos(), SoundEvents.ENTITY_GUARDIAN_ATTACK, SoundCategory.PLAYERS, 1f, 1.5f);
+
+                user.getItemCooldownManager().set(this, 20);
             }
         }
 

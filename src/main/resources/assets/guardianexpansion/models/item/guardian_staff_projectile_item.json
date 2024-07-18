@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "guardianexpansion:item/guardian_staff_projectile_item"
+    }
+}

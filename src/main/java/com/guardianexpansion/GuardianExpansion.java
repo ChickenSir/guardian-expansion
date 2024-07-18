@@ -14,6 +14,7 @@ import org.slf4j.LoggerFactory;
 
 import com.guardianexpansion.Collections.BlocksCollection;
 import com.guardianexpansion.Collections.ItemsCollection;
+import com.guardianexpansion.Collections.ProjectilesCollection;
 
 public class GuardianExpansion implements ModInitializer {
 
@@ -75,6 +76,11 @@ public class GuardianExpansion implements ModInitializer {
 		LOGGER.info("Registering Blocks!");
 
 		BlocksCollection.Register(modID);
+
+		// Register Projectiles
+		LOGGER.info("Registering Projectiles");
+
+		ProjectilesCollection.Register(modID);
 
 		// Register Item Group
 		LOGGER.info("Registerting Item Group!");
