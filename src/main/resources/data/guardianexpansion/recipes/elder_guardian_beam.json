@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:smithing_transform",
+    "template": {
+        "item": "guardianexpansion:ocean_upgrade_template"
+    },
+    "base": {
+        "item": "guardianexpansion:guardian_beam"
+    },
+    "addition": {
+        "item": "guardianexpansion:elder_prismarine_shard"
+    },
+    "result": {
+        "item": "guardianexpansion:elder_guardian_beam"
+    }
+}
