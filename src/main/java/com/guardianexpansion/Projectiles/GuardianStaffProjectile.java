@@ -56,7 +56,7 @@ public class GuardianStaffProjectile extends ThrownItemEntity {
         }
 
         if (entity instanceof LivingEntity livingEntity && entity != this.getOwner()) {
-            livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 5, 0, false, true, true));
+            livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 100, 0, false, true, true));
         }
     }
 
