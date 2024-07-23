@@ -15,6 +15,7 @@ import net.minecraft.item.Item;
 import net.minecraft.network.listener.ClientPlayPacketListener;
 import net.minecraft.network.packet.Packet;
 import net.minecraft.network.packet.s2c.play.EntitySpawnS2CPacket;
+import net.minecraft.particle.ParticleTypes;
 import net.minecraft.util.hit.EntityHitResult;
 import net.minecraft.util.hit.HitResult;
 import net.minecraft.world.World;
@@ -77,11 +78,17 @@ public class GuardianStaffProjectile extends ThrownItemEntity {
     @Override
     public void tick() {
         super.tick();
-        if (despawnTimer >= 60) {
-            this.discard();
-        } else {
-            despawnTimer++;
+        if (!this.getWorld().isClient()) {
+            if (despawnTimer >= 60) {
+                this.discard();
+            } else {
+                despawnTimer++;
+            }
         }
+
+        // Create Particles
+        this.getWorld().addParticle(ParticleTypes.SPLASH, this.getX() + 0.15, this.getY() + 0.25, this.getZ(), this.getVelocity().x, this.getVelocity().y, this.getVelocity().z);
+        this.getWorld().addParticle(ParticleTypes.SPLASH, this.getX() - 0.15, this.getY() + 0.25, this.getZ(), this.getVelocity().x, this.getVelocity().y, this.getVelocity().z);
     }
 
     public void setDamage(float damage) {
