@@ -86,9 +86,11 @@ public class GuardianStaffProjectile extends ThrownItemEntity {
             }
         }
 
-        // Create Particles
-        this.getWorld().addParticle(ParticleTypes.SPLASH, this.getX() + 0.15, this.getY() + 0.25, this.getZ(), this.getVelocity().x, this.getVelocity().y, this.getVelocity().z);
-        this.getWorld().addParticle(ParticleTypes.SPLASH, this.getX() - 0.15, this.getY() + 0.25, this.getZ(), this.getVelocity().x, this.getVelocity().y, this.getVelocity().z);
+        if (!this.isSubmergedInWater()) {
+            // Create Particles
+            this.getWorld().addParticle(ParticleTypes.SPLASH, this.getX() + 0.15, this.getY() + 0.25, this.getZ(), this.getVelocity().x, this.getVelocity().y, this.getVelocity().z);
+            this.getWorld().addParticle(ParticleTypes.SPLASH, this.getX() - 0.15, this.getY() + 0.25, this.getZ(), this.getVelocity().x, this.getVelocity().y, this.getVelocity().z);
+        }
     }
 
     public void setDamage(float damage) {
